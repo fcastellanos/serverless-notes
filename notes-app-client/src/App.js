@@ -21,7 +21,7 @@ class App extends Component {
       await Auth.currentSession();
       this.userHasAuthenticated(true);
     } catch (e) {
-      if (e != 'No current user') {
+      if (e !== 'No current user') {
         alert(e);
       }
     }
@@ -37,7 +37,7 @@ class App extends Component {
     await Auth.signOut();
 
     this.userHasAuthenticated(false);
-    
+
     this.props.history.push("/login");
   }
 
