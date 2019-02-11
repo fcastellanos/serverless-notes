@@ -1,5 +1,6 @@
 // TODO: Need to update values
 const dev = {
+  STRIPE_KEY: "YOUR_STRIPE_DEV_PUBLIC_KEY",
   s3: {
     REGION: "us-east-1",
     BUCKET: "YOUR_DEV_S3_UPLOADS_BUCKET_NAME"
@@ -17,6 +18,7 @@ const dev = {
 };
 
 const prod = {
+  STRIPE_KEY: "YOUR_STRIPE_PROD_PUBLIC_KEY",
   s3: {
     REGION: "us-east-1",
     BUCKET: "YOUR_PROD_S3_UPLOADS_BUCKET_NAME"
